@@ -1,7 +1,4 @@
-[view the page](https://karlwenninger.github.io/punch-card-tribute/)
-
-[![Preview](page-preview.png)]
-
+[![Preview](page-preview.png)](https://karlwenninger.github.io/punch-card-tribute/)
 
 ## Tribute to Punch Card Coders
 
@@ -11,9 +8,8 @@ Premise of project: while coding can be difficult and frustrating we have it pre
 
 ## Built With
 
-* HTML
 * CSS
-
+* HTML
 
 ## Authors
 
