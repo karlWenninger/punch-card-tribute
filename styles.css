@@ -1,110 +1,134 @@
 * {
+  box-sizing: border-box;
   margin: 0 auto;
 }
 
 .container {
-  width: 75vw;
-}
-.img-div-lg {
-  width: 75%;
-}
-article, footer, .img-div-med {
-  width: 65%;
+  padding: 1rem;
+  width: 98%;
 }
 
+h1,
+p {
+  font-family: Merriweather;
+}
 
 h1 {
-  font-family: Merriweather;
-  text-align: center;
-  font-size: 2.2em;
-  /*margins inline*/
+  font-size: 1.8em;
+  margin: 1em .5em;
 }
+
+p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.8em;
+  margin-top: 1em;
+
+}
+
 img {
+  display: block;
+  margin: 2em auto;
   width: 100%;
 }
 
 .img-caption {
   font-family: Helvetica, sans-serif;
   font-size: .9em;
-  color: #222;
-  margin-top: .1em;
+  color: #444;
+  margin-top: -2em;
   text-align: right;
-}
-/* #image is to pass FCC test (not doing anything useful) */
-#image { 
-  display: block;
-  max-width: 100%;
 }
 
 blockquote {
-  width: 70%;
   font-family: Open Sans;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-style: italic;
   color: #2274a5;
   text-align: right;
-  border-right: solid 1px;
-  margin: 2em auto;
-  padding-right: .5em;
-  line-height: 1.3em;
+  margin: 2.5em 0;
+  padding-right: .6em;
 }
+
 cite {
   font-size: .8em;
   color: #777;
 }
+
 cite:before {
   content: "– ";
 }
 
-article {
-  font-family: Merriweather;
-  font-size: 1em;
-  color: #555;
-  line-height: 1.5em;
-  margin: 2em auto;
+ul {
+  padding-left: 1.5em;
 }
 
-
-ul li {
-  font-size: .9em;
-  line-height: 1.5em;
+li {
+  margin-top: .3em;
 }
-
 
 a {
   text-decoration: none;
-  color: #0000EE;
 }
 
 footer {
-  width: 60%;
   color: #666;
   font-size: 0.8em;
-  margin: 8em auto 2em;
 }
+
 footer a {
   color: #666;
 }
+
 footer a:hover {
   color: #888;
 }
 
-@media screen and (max-width: 1300px) {
+.footer-refs {
+  padding-left: .25em;
+  margin-bottom: 1em;
+}
+
+.mt-2 {
+  margin-top: 2em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 768px) {
   .container {
-    width: 85vw;
+    max-width: 800px;
+  }
+
+  h1 {
+    font-size: 2.2em
+  }
+
+  p,
+  li {
+    font-size: 1.1em;
+  }
+
+  article, footer,
+  .img-md {
+    width: 42rem;
+  }
+
+  .img-caption {
+    margin: -2em auto 0;
+    width: 40rem;
+  }
+
+  blockquote {
+    font-size: 1.85em;
   }
 }
-@media screen and (max-width: 900px) {
-  .container {
-    width: 90vw;
-  }
-  article, .img-div-lg, .img-div-med {
-    width: 90%;
-   }
-  blockquote {
-    width: 95%;
-  }
-   footer {
-    width: 80%;
+
+@media (min-width: 920px) {
+  .img-xl {
+    width: 120%;
+    transform: translateX(-10%)
   }
 }
